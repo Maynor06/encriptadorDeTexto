@@ -1,38 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Encriptador</title>
-        <link rel="stylesheet" href="reset.css/reset.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Encriptador.css">
-
-    </head>
-    <body>
-        <header>
-
-           <h1 class="logo"><img src="logo.png"></h1>
-
-        </header>
-
-        <main>
-            <div>
-                <input type="text" placeholder="Ingrese el texto aquí" class="ingreso" ></textarea>
-            </div>
-        
-            <div class="respuesta">
-                <section class="mensaje">
-                    <p class="anuncio">Ningun mensaje fue encontrado</p>
-                    <textarea cols="30" rows="10" class="mensaje" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
-                </section>
-            </div>
-            <img src="Muñeco.png" class="muñeco">
-            
-            <div>
-                <p class="aviso"> &#9888; Solo letras minusculas y sin acentos</p>
-                <button class="botones">Encriptar</button>
-                <button class="botones">Desencriptar</button>
-            </div>
-        </main>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css/reset.css">
+    <link rel="stylesheet" href="Encriptador.css">
+</head>
+<body>
+    <img src="Logo.png" alt="Logo">
+    <div class="container">
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div class="terminos">
+            <p>Solo letras minusculas y sin acento</p>
+        </div>
+        <div class="botones">
+            <button class="botEncriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <input class="botDesencriptar" onclick="desencriptar()" type="button" value="Desencriptar">
+        </div>
+    </div>
+    <div class="encriptado">
+        <img src="Muñeco.png" alt="muñeco" id="muñeco">
+        <div class="mensajeEncriptado" id="mensajeEncriptado">
+            <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+        </div>
+    </div>
+</body>
+<script src="encriptador.js"></script>
 </html>
