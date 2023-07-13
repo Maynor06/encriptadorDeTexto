@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="Encriptador.css">
 </head>
 <body>
-    <img src="Logo.png" alt="Logo">
+    <div class="logo">
+        <img src="logo.png" alt="Logo1">
+        <img src="Top.png" alt="Logo">
+    </div>
     <div class="container">
         <div class="encriptar">
             <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
@@ -22,11 +25,10 @@
         </div>
     </div>
     <div class="encriptado">
-        <img src="Muñeco.png" alt="muñeco" id="muñeco">
+        <img src="Muñeco.png" class="muñeco" alt="muñeco" id="muñeco">
         <div class="mensajeEncriptado" id="mensajeEncriptado">
-            <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
-            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="8" class="mensaje" placeholder="Ingresa el texto que deseas encriptar o desencriptar"></textarea>
         </div>
     </div>
 </body>
