@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="Encriptador.css">
 </head>
 <body>
-    <div class="logo">
-        <img src="logo.png" alt="Logo1">
-        <img src="Top.png" alt="Logo">
-    </div>
-    <div class="container">
+    <header>
+        <div class="logo">
+            <img src="/imagenes/Logo.png" alt="Logo1">
+            <img src="imagenes/Top.png" alt="Logo">
+        </div>
+    </header>
+    <main class="container">
         <div class="encriptar">
             <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
         </div>
@@ -23,9 +25,9 @@
             <button class="botEncriptar" type="button" onclick="encriptar()">Encriptar</button>
             <input class="botDesencriptar" onclick="desencriptar()" type="button" value="Desencriptar">
         </div>
-    </div>
+    </main>
     <div class="encriptado">
-        <img src="Muñeco.png" class="muñeco" alt="muñeco" id="muñeco">
+        <img src="imagenes/Muñeco.png" class="muñeco" alt="muñeco" id="muñeco">
         <div class="mensajeEncriptado" >
             <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
             <p id="parrafo">Ingresa el texto que quieras encriptar o desencriptar</p>

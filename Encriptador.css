@@ -83,6 +83,12 @@
 .botDesencriptar:hover,
 .copiar:hover{
     transform: scale(1.1);
+    cursor: pointer;
+}
+.botEncriptar:active,
+.botDesencriptar:active,
+.copiar:active{
+    background: #83c109;
 }
 .encriptado{
     display: flex;
